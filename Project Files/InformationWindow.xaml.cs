@@ -20,7 +20,7 @@ namespace Анализ_Сети
 
         private void Border_github_link_btn_Click(object sender, MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("https://github.com/yarn1x/Network-Scanner");
         }
 
         private void drag(object sender, MouseButtonEventArgs e)

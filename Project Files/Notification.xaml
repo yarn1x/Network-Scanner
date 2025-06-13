@@ -92,7 +92,7 @@
                    HorizontalAlignment="Left" 
                    FontSize="24" 
                    FontFamily="Bahnschrift Light" 
-                   Margin="23,10,0,0"/>
+                   Margin="23,10,0,0" MouseLeftButtonDown="dragging"/>
 
 
         <TextBlock x:Name="tb_text" Text="Notification"

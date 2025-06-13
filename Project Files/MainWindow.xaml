@@ -299,13 +299,18 @@
 						FontSize="48" 
 						Padding="1,1,1,1" 
 						Background="#FF3E3E3E" 
-						Cursor="Hand" Margin="10,0,0,0" Click="Btn_scannerOpener_Click">
+						Cursor="Hand" 
+                        Margin="10,0,0,0"
+                        Click="Btn_scannerOpener_Click">
 
                     <Border x:Name="Border_scannerOpener__imageContainer" 
-							BorderThickness="1" Height="46" Width="46" Background="#FFD8D8D8">
+                            Height="46" Width="46" 
+                            Background="#FFD8D8D8">
+                        
                         <Border.OpacityMask>
                             <ImageBrush ImageSource="/Res/radar_mask.png"/>
                         </Border.OpacityMask>
+                        
                     </Border>
                 </Button>
 
@@ -332,15 +337,19 @@
 						FontSize="48" 
 						Padding="1,1,1,1"
 						Background="#FF3E3E3E" 
-						Cursor="Hand" Margin="10,0,0,0" Click="Btn_editOpener_Click">
+						Cursor="Hand" 
+                        Margin="10,0,0,0" 
+                        Click="Btn_editOpener_Click">
 
                     <Border x:Name="Border_editOpener__imageContainer" 
 							BorderThickness="1" 
 							Height="46" Width="48" 
 							Background="#FFD8D8D8">
+                        
                         <Border.OpacityMask>
                             <ImageBrush ImageSource="/Res/edit_mask.png"/>
                         </Border.OpacityMask>
+                        
                     </Border>
                 </Button>
 
@@ -350,7 +359,8 @@
 						   FontSize="24" 
 						   Width="200" 
 						   HorizontalAlignment="Left" 
-						   VerticalAlignment="Center">Настройка <LineBreak/> интерфейса сети
+						   VerticalAlignment="Center">
+                    Настройка <LineBreak/> интерфейса сети
                 </TextBlock>
 
 
@@ -393,9 +403,11 @@
 							BorderThickness="1" 
 							Height="46" Width="48" 
 							Background="#FFD8D8D8">
+                        
                         <Border.OpacityMask>
                             <ImageBrush ImageSource="/Res/info_mask.png"/>
                         </Border.OpacityMask>
+                        
                     </Border>
                 </Button>
 
@@ -604,9 +616,11 @@
                      HorizontalAlignment="Center" 
                      Width="350" Height="350"
                      Margin="0,0,0,78.5">
+                
                 <Ellipse.OpacityMask>
                     <ImageBrush ImageSource="Res/loading_mask.png"/>
                 </Ellipse.OpacityMask>
+                
             </Ellipse>
 
 
@@ -655,76 +669,78 @@
                       Margin="0,0,5,0">
 
                     <TextBlock x:Name="tb_staticIP_container__Header" 
-						   HorizontalAlignment="Center" 
-						   TextWrapping="Wrap" 
-						   Text="Настройка статического IP адреса" 
-						   TextAlignment="Center"
-						   VerticalAlignment="Center" 
-						   Margin="0,0,0,337" 
-						   Foreground="#FFD8D8D8" MaxWidth="300"/>
+						       HorizontalAlignment="Center" 
+						       TextWrapping="Wrap" 
+						       Text="Настройка статического IP адреса" 
+						       TextAlignment="Center"
+						       VerticalAlignment="Center" 
+						       Margin="0,0,0,337" 
+						       Foreground="#FFD8D8D8" MaxWidth="300"/>
 
                     <TextBox x:Name="tb_staticIP_container__staticIP" 
-						 Style="{DynamicResource TextBoxStyle_smooth}" 
-						 HorizontalAlignment="Center" 
-						 TextWrapping="Wrap" 
-						 VerticalAlignment="Center" 
-						 SelectionBrush="#FF868686" 
-						 Height="45" Width="200"
-						 HorizontalContentAlignment="Center" 
-						 VerticalContentAlignment="Center" 
-						 Margin="0,0,0,170" 
-                         LostFocus="tb_staticIP_container__staticIP_LostFocus" 
-                         GotFocus="tb_staticIP_container__staticIP_GotFocus" 
-                         Text="IPv4 Адрес" 
-                         Foreground="#FF606060" 
-                         MaxLength="15"/>
+						     Style="{DynamicResource TextBoxStyle_smooth}" 
+						     HorizontalAlignment="Center" 
+						     TextWrapping="Wrap" 
+						     VerticalAlignment="Center" 
+						     SelectionBrush="#FF868686" 
+						     Height="45" Width="200"
+						     HorizontalContentAlignment="Center" 
+						     VerticalContentAlignment="Center" 
+						     Margin="0,0,0,170" 
+                             LostFocus="tb_staticIP_container__staticIP_LostFocus" 
+                             GotFocus="tb_staticIP_container__staticIP_GotFocus" 
+                             Text="IPv4 Адрес" 
+                             Foreground="#FF606060" 
+                             MaxLength="15"/>
 
                     <TextBox x:Name="tb_staticIP_container__subnet_mask" 
-						 Style="{DynamicResource TextBoxStyle_smooth}" 
-						 HorizontalAlignment="Center" 
-						 TextWrapping="Wrap"
-						 VerticalAlignment="Center" 
-						 SelectionBrush="#FF868686"
-						 Height="45" Width="200" 
-						 HorizontalContentAlignment="Center" 
-						 VerticalContentAlignment="Center"
-						 Margin="0,40,0,0" 
-                         Text="Маска" 
-                         Foreground="#FF606060" 
-                         GotFocus="tb_staticIP_container__subnet_mask_GotFocus" 
-                         LostFocus="tb_staticIP_container__subnet_mask_LostFocus"
-                         MaxLength="15"/>
+						     Style="{DynamicResource TextBoxStyle_smooth}" 
+						     HorizontalAlignment="Center" 
+						     TextWrapping="Wrap"
+						     VerticalAlignment="Center" 
+						     SelectionBrush="#FF868686"
+						     Height="45" Width="200" 
+						     HorizontalContentAlignment="Center" 
+						     VerticalContentAlignment="Center"
+						     Margin="0,40,0,0" 
+                             Text="Маска" 
+                             Foreground="#FF606060" 
+                             GotFocus="tb_staticIP_container__subnet_mask_GotFocus" 
+                             LostFocus="tb_staticIP_container__subnet_mask_LostFocus"
+                             MaxLength="15"/>
 
                     <TextBox x:Name="tb_staticIP_container__gateway" 
-						 Style="{DynamicResource TextBoxStyle_smooth}" 
-						 HorizontalAlignment="Center" 
-						 TextWrapping="Wrap" 
-						 VerticalAlignment="Center" 
-						 SelectionBrush="#FF868686" 
-						 Height="45" Width="200"
-						 HorizontalContentAlignment="Center" 
-						 VerticalContentAlignment="Center" 
-						 Margin="0,250,0,0"
-                         Text="Основной шлюз" 
-                         Foreground="#FF606060" 
-                         GotFocus="tb_staticIP_container__gateway_GotFocus" 
-                         LostFocus="tb_staticIP_container__gateway_LostFocus"
-                         MaxLength="15"/>
+						     Style="{DynamicResource TextBoxStyle_smooth}" 
+						     HorizontalAlignment="Center" 
+						     TextWrapping="Wrap" 
+						     VerticalAlignment="Center" 
+						     SelectionBrush="#FF868686" 
+						     Height="45" Width="200"
+						     HorizontalContentAlignment="Center" 
+						     VerticalContentAlignment="Center" 
+						     Margin="0,250,0,0"
+                             Text="Основной шлюз" 
+                             Foreground="#FF606060" 
+                             GotFocus="tb_staticIP_container__gateway_GotFocus" 
+                             LostFocus="tb_staticIP_container__gateway_LostFocus"
+                             MaxLength="15"/>
 
                     <CheckBox x:Name="cb_staticIP_container_staticIP_switcher" 
-                          Style="{DynamicResource CheckBoxStyle_reColor}" 
-                          Content="Получать IP &#xD;&#xA;автоматически" ToolTip="Установка IP адреса автоматически вашим сервером"
-                          HorizontalAlignment="Center" 
-                          Margin="0,431,0,0" 
-                          VerticalAlignment="Center" 
-                          HorizontalContentAlignment="Center" 
-                          VerticalContentAlignment="Center" 
-                          Background="#FF737373" 
-                          Foreground="#FFD8D8D8" 
-                          BorderBrush="{x:Null}" 
-                          Padding="10,0,0,0" 
-                          FontSize="12" 
-                          Cursor="Hand" IsChecked="True" Click="cb_staticIP_container_staticIP_switcher_Checked">
+                              Style="{DynamicResource CheckBoxStyle_reColor}" 
+                              Content="Получать IP &#xD;&#xA;автоматически" ToolTip="Установка IP адреса автоматически вашим сервером"
+                              HorizontalAlignment="Center" 
+                              Margin="0,431,0,0" 
+                              VerticalAlignment="Center" 
+                              HorizontalContentAlignment="Center" 
+                              VerticalContentAlignment="Center" 
+                              Background="#FF737373" 
+                              Foreground="#FFD8D8D8" 
+                              BorderBrush="{x:Null}" 
+                              Padding="10,0,0,0" 
+                              FontSize="12" 
+                              Cursor="Hand" 
+                              IsChecked="True" 
+                              Click="cb_staticIP_container_staticIP_switcher_Checked">
 
                         <CheckBox.LayoutTransform>
                             <ScaleTransform ScaleX="2" ScaleY="2" />
@@ -749,53 +765,55 @@
 						   Foreground="#FFD8D8D8" Margin="0,0,0,337"/>
 
                     <TextBox x:Name="tb_DNS_container__primaryDNS" 
-						 Style="{DynamicResource TextBoxStyle_smooth}" 
-						 HorizontalAlignment="Center" 
-						 TextWrapping="Wrap" 
-						 VerticalAlignment="Center" 
-						 SelectionBrush="#FF868686" 
-						 Height="45" Width="200"
-						 HorizontalContentAlignment="Center" 
-						 VerticalContentAlignment="Center" 
-                         Margin="0,0,-6,170" 
-                         Text="Предпочитаемый DNS" 
-                         Foreground="#FF606060" 
-                         FontSize="18" 
-                         GotFocus="tb_DNS_container__primaryDNS_GotFocus" 
-                         LostFocus="tb_DNS_container__primaryDNS_LostFocus"
-                         MaxLength="15"/>
+						     Style="{DynamicResource TextBoxStyle_smooth}" 
+						     HorizontalAlignment="Center" 
+						     TextWrapping="Wrap" 
+						     VerticalAlignment="Center" 
+						     SelectionBrush="#FF868686" 
+						     Height="45" Width="200"
+						     HorizontalContentAlignment="Center" 
+						     VerticalContentAlignment="Center" 
+                             Margin="0,0,-6,170" 
+                             Text="Предпочитаемый DNS" 
+                             Foreground="#FF606060" 
+                             FontSize="18" 
+                             GotFocus="tb_DNS_container__primaryDNS_GotFocus" 
+                             LostFocus="tb_DNS_container__primaryDNS_LostFocus"
+                             MaxLength="15"/>
 
                     <TextBox x:Name="tb_DNS_container__secondaryDNS" 
-						 Style="{DynamicResource TextBoxStyle_smooth}" 
-						 HorizontalAlignment="Center" 
-						 TextWrapping="Wrap" 
-						 VerticalAlignment="Center" 
-						 SelectionBrush="#FF868686" 
-						 Height="45" Width="200"
-						 HorizontalContentAlignment="Center" 
-						 VerticalContentAlignment="Center" 
-                         Margin="0,40,0,0" 
-                         Text="Альтернативный DNS"
-                         Foreground="#FF606060" 
-                         FontSize="18" 
-                         GotFocus="tb_DNS_container__secondaryDNS_GotFocus"
-                         LostFocus="tb_DNS_container__secondaryDNS_LostFocus"
-                         MaxLength="15"/>
+						     Style="{DynamicResource TextBoxStyle_smooth}" 
+						     HorizontalAlignment="Center" 
+						     TextWrapping="Wrap" 
+						     VerticalAlignment="Center" 
+						     SelectionBrush="#FF868686" 
+						     Height="45" Width="200"
+						     HorizontalContentAlignment="Center" 
+						     VerticalContentAlignment="Center" 
+                             Margin="0,40,0,0" 
+                             Text="Альтернативный DNS"
+                             Foreground="#FF606060" 
+                             FontSize="18" 
+                             GotFocus="tb_DNS_container__secondaryDNS_GotFocus"
+                             LostFocus="tb_DNS_container__secondaryDNS_LostFocus"
+                             MaxLength="15"/>
 
                     <CheckBox x:Name="cb_DNS_container__DNS_switcher" 
-                          Style="{DynamicResource CheckBoxStyle_reColor}" 
-                          Content="Получать DNS&#xA;автоматически" ToolTip="Установка DNS сервера автоматически вашим сервером"
-                          HorizontalAlignment="Center" 
-                          Margin="0,431,0,0" 
-                          VerticalAlignment="Center" 
-                          HorizontalContentAlignment="Center" 
-                          VerticalContentAlignment="Center" 
-                          Background="#FF737373" 
-                          Foreground="#FFD8D8D8" 
-                          BorderBrush="{x:Null}" 
-                          Padding="10,0,0,0" 
-                          FontSize="12" 
-                          Cursor="Hand" IsChecked="True" Click="cb_DNS_container__DNS_switcher_Checked">
+                              Style="{DynamicResource CheckBoxStyle_reColor}" 
+                              Content="Получать DNS&#xA;автоматически" ToolTip="Установка DNS сервера автоматически вашим сервером"
+                              HorizontalAlignment="Center" 
+                              Margin="0,431,0,0" 
+                              VerticalAlignment="Center" 
+                              HorizontalContentAlignment="Center" 
+                              VerticalContentAlignment="Center" 
+                              Background="#FF737373" 
+                              Foreground="#FFD8D8D8" 
+                              BorderBrush="{x:Null}" 
+                              Padding="10,0,0,0" 
+                              FontSize="12" 
+                              Cursor="Hand" 
+                              IsChecked="True" 
+                              Click="cb_DNS_container__DNS_switcher_Checked">
 
                         <CheckBox.LayoutTransform>
                             <ScaleTransform ScaleX="2" ScaleY="2" />

@@ -94,7 +94,15 @@
             <Border x:Name="Border_dragArea" 
                     Margin="-3,-4,-3,255" 
                     Background="#FFD8D8D8" 
-                    CornerRadius="30,30,0,0" MouseLeftButtonDown="drag"/>
+                    CornerRadius="30,30,0,0" MouseLeftButtonDown="drag">
+                
+                <TextBlock Text="О приложении" 
+                           FontSize="24" 
+                           FontFamily="Bahnschrift Light" 
+                           Margin="-192.6,0,0,0" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+            </Border>
         </Border>
 
         <Button x:Name="Btn_OK" 
@@ -117,9 +125,9 @@
                    FontSize="24" 
                    FontFamily="Bahnschrift Light" 
                    Margin="23,40,0,0" >
-                   Версия: 0.0.1 ɑ <LineBreak/>
+                   Версия: 0.0.2 ɑ <LineBreak/>
                    Дата последнего обновления: <LineBreak/>
-                   12.06.2025 (dd.mm.yyyy) <LineBreak/>
+                   13.06.2025 (dd.mm.yyyy) <LineBreak/>
                    <LineBreak/>
                    <LineBreak/>
                    Разработчик: yarn1x <LineBreak/>

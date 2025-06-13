@@ -1,0 +1,85 @@
+Network Scanner: A Quick User Guide
+
+
+Content
+1. Introduction
+2. Main functions
+3. User Interface
+4. Configuring network settings
+5. Warnings and Disclaimers of responsibility
+6. Conclusion
+ 
+
+1. Introduction
+
+The Network Scanner application is designed to quickly display basic information about your device's network connection and provides the ability to configure network settings.
+
+
+2. Main functions
+
+Automatic scanning: At startup, the application automatically detects and displays information about the first active network adapter.
+Displaying information:
+The device's IP address
+Subnet mask
+Default gateway
+Name of the network interface
+Copying information: The ability to copy any displayed information to the clipboard with a single tap.
+Navigation Bar: A convenient navigation bar for quick access to the main functions of the application.
+Network Setup: (Requires administrator rights) Allows you to set up a static IP address and DNS servers.
+Network Status Indicator: Shows network availability and warns the user if there is no connection.
+
+3. User Interface
+
+When you launch the Network Scanner application, the main window is displayed with the following elements:
+
+Basic network information: The upper part of the window displays information about an active network connection (IP address, mask, gateway, interface name).
+The "Repeat scan" button: Allows you to start the process of scanning network adapters again.
+
+Navigation bar:
+Expand Button/Minimize Panel: Allows you to hide or display the navigation bar to save space on the screen.
+The "Scanner" button: Goes to the page for displaying basic network information (the main application window).
+The "Network Setup" button: Goes to the network settings page (requires administrator rights).
+Network status indicator:
+"Online": The application has access to the network and can perform all functions.
+"Offline": The functionality of the application is limited. Check your network connection. Possible solutions:
+    * Make sure that the network cable is connected.
+    * Restart the router.
+    * Contact your Internet service provider.
+The "About the application" button: Displays information about the application version, the developer, and a link to the repository on GitHub.
+
+ 
+4. Configuring network settings
+
+Important! Administrator rights are required to change network settings. When you go to the network settings page, the application will request a restart with elevated permissions.
+Attention! Incorrect network settings can lead to network connection problems. Use this feature with caution and only if you are confident in your actions.
+
+Procedure of actions:
+1. Restart the application with administrator rights: When you go to the "Network Setup" page, the application will prompt you to restart with administrator rights.
+2. Accept the terms of the agreement: After restarting the application, a window will appear with warnings about responsibility for changing network settings. It is necessary to accept the terms of the agreement in order to continue.
+Setting up the parameters:
+3. Static IP address: Enter the desired IP address, subnet mask, default gateway (optional).
+4. DNS Servers: Enter the addresses of your preferred and alternative DNS servers. (optional).
+Automatic settings:
+"Get an IP address automatically": Enable this option to get an IP address from the DHCP server.
+"Get DNS server automatically": Enable this option to get DNS server addresses from the DHCP server.
+5. Applying Settings:
+ "Apply" button: Saves the entered parameters and applies them to the network adapter.
+Undo button: Cancels all changes, clears the input fields, and enables automatic retrieval of IP addresses and DNS servers.
+
+5. Warnings and Disclaimers
+
+By using the "Network Scanner" application, you agree to the following terms:
+1. No liability: The developer is not responsible for any damages or problems caused by using the application.
+2. Familiarization with the documentation: You confirm that you have read this documentation and are aware of the possible consequences of changing network settings.
+3. Distribution restrictions: You are not allowed to transfer copies of the application files to third parties. Distribution of the application is possible only with the permission of the developer.
+
+6. Conclusion
+
+The Network Scanner application provides a simple and convenient way to view and configure your device's network settings. Please use it with caution and according to the instructions provided. Thanks for using it!
+
+7. Contact Information
+
+Email address: denmar2281@gmail.com
+Telegram: @FF_FF_FF_FF_FF_FF_FF_FF_FF
+GitHub repository: https://github.com/yarn1x/Network-Scanner
+GitHub account: https://github.com/yarn1x

@@ -600,7 +600,7 @@ namespace Анализ_Сети
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Не удалось перезапустить приложение с правами администратора.\n" + ex.Message);
+                    ShowMessageBox("Отклонено в доступе.", "Не удалось перезапустить приложение с правами администратора.\n" + ex.Message);
                 }
             }
         }
@@ -669,23 +669,65 @@ namespace Анализ_Сети
             {
                 ShakeGridAnimation(Grid_navigationButtons__warning); return;
             }
+            
+            // Настройка статического IP-адреса
             else if (IsAdministrator() && GetGatewayAddress() != null)
             {
-                if (cb_staticIP_container_staticIP_switcher.IsChecked == false && tb_staticIP_container__staticIP.Text != "IPv4 Адрес" && tb_staticIP_container__subnet_mask.Text != "Маска" && tb_staticIP_container__gateway.Text != "Основной шлюз")
+                bool noErrors = true;
+
+                if (cb_staticIP_container_staticIP_switcher.IsChecked == true)
                 {
-                    SetStaticIP(GetInterfaceName(), tb_staticIP_container__staticIP.Text, tb_staticIP_container__subnet_mask.Text, tb_staticIP_container__gateway.Text);
+                    // no method yet
                 }
-                else if (cb_staticIP_container_staticIP_switcher.IsChecked == false)
+                else if (cb_staticIP_container_staticIP_switcher.IsChecked == false && 
+                    (tb_staticIP_container__staticIP.Text == "IPv4 Адрес" 
+                    || tb_staticIP_container__subnet_mask.Text == "Маска" 
+                    || tb_staticIP_container__gateway.Text == "Основной шлюз"))
                 {
-                    MessageBox.Show("Не все поля заполнены!");
+                    ShowMessageBox("Не все поля заполнены!", "Аккуратно! Данные неверны или заполнены не полностью.");
+                    noErrors = false;
                 }
-                if (cb_DNS_container__DNS_switcher.IsChecked == false && tb_DNS_container__primaryDNS.Text != "Предпочитаемый DNS" && tb_DNS_container__secondaryDNS.Text != "Альтернативный DNS")
+                else
                 {
-                    SetDNS(GetInterfaceName(), tb_DNS_container__primaryDNS.Text, tb_DNS_container__secondaryDNS.Text);
+                    try
+                    {
+                        SetStaticIP(GetInterfaceName(), tb_staticIP_container__staticIP.Text, tb_staticIP_container__subnet_mask.Text, tb_staticIP_container__gateway.Text);
+                    }
+                    catch (Exception ex)
+                    { 
+                        ShowMessageBox("Ошибка!", $"Не удалось установить статический адрес. Сообщение ошибки: {ex.Message}");
+                        noErrors = false;
+                    }
                 }
-                else if (cb_DNS_container__DNS_switcher.IsChecked == false)
+
+                //настройка DNS серверов
+                if (cb_staticIP_container_staticIP_switcher.IsChecked == true)
                 {
-                    MessageBox.Show("Не все поля заполнены!");
+                   // no method yet
+                }
+                else if (cb_DNS_container__DNS_switcher.IsChecked == false && 
+                    (tb_DNS_container__primaryDNS.Text == "Предпочитаемый DNS" 
+                    || tb_DNS_container__secondaryDNS.Text == "Альтернативный DNS"))
+                {
+                    ShowMessageBox("Не все поля заполнены!", "Аккуратно! Данные неверны или заполнены не полностью.");
+                    noErrors = false;
+                }
+                else
+                {
+                    try
+                    {
+                        SetDNS(GetInterfaceName(), tb_DNS_container__primaryDNS.Text, tb_DNS_container__secondaryDNS.Text);
+                    }
+                    catch (Exception ex)
+                    {
+                        ShowMessageBox("Ошибка!", $"Не удалось установить DNS. Сообщение ошибки: {ex.Message}");
+                        noErrors = false;
+                    }
+                }
+
+                if (noErrors)
+                {
+                    ShowMessageBox("Успешно!", "Настройки применены без ошибок.");
                 }
             }
         }
