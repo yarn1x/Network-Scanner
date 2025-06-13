@@ -1,0 +1,38 @@
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ_Сети.csproj.AssemblyReference.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\MainWindow.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\App.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\MainWindow.baml
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ_Сети.csproj.GenerateResource.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ_Сети.csproj.CoreCompileInputs.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\bin\Debug\Анализ Сети.exe.config
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\bin\Debug\Анализ Сети.exe
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\bin\Debug\Анализ Сети.pdb
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ Сети_MarkupCompile.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ Сети_MarkupCompile.lref
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ Сети.g.resources
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\NetScanner.Properties.Resources.resources
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ Сети.exe
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Анализ Сети.pdb
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\InformationWindow.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Notification.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\InformationWindow.baml
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\obj\Debug\Notification.baml
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\bin\Debug\Анализ Сети.exe.config
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\bin\Debug\Анализ Сети.exe
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\bin\Debug\Анализ Сети.pdb
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ_Сети.csproj.AssemblyReference.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\MainWindow.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\InformationWindow.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Notification.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\App.g.cs
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ Сети_MarkupCompile.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ Сети_MarkupCompile.lref
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\MainWindow.baml
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\InformationWindow.baml
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Notification.baml
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ Сети.g.resources
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\NetScanner.Properties.Resources.resources
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ_Сети.csproj.GenerateResource.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ_Сети.csproj.CoreCompileInputs.cache
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ Сети.exe
+C:\Desktop\Prog\СИстемный прогер\Анализ_Сети\Project Files\obj\Debug\Анализ Сети.pdb
